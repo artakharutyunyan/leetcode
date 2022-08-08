@@ -56,7 +56,7 @@ let adjacencies = (tree, i, j) => {
 };
 
 let isDuplicate = (arr1, arr2) => {
-  for (var i = 0; i < arr1.length; i++) {
+  for (let i = 0; i < arr1.length; i++) {
     if (JSON.stringify(arr1[i]) === JSON.stringify(arr2)) {
       return true;
     }

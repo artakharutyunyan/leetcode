@@ -1,19 +1,19 @@
 var permute = function (nums) {
-  var res = [];
+  let res = [];
 
   dfs(res, [], nums);
 
   return res;
 };
 
-var dfs = function (res, arr, nums) {
-  var len = nums.length;
-  var tmp1 = null;
-  var tmp2 = null;
+let dfs = function (res, arr, nums) {
+  let len = nums.length;
+  let tmp1 = null;
+  let tmp2 = null;
 
   if (!len) return res.push(arr);
 
-  for (var i = 0; i < len; i++) {
+  for (let i = 0; i < len; i++) {
     tmp1 = Array.from(arr);
     tmp1.push(nums[i]);
 

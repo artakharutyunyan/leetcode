@@ -1,6 +1,6 @@
 var reverseList = function (head) {
-  var newHead = null;
-  var tmp = null;
+  let newHead = null;
+  let tmp = null;
   while (head) {
     tmp = head.next;
     head.next = newHead;
